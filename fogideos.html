@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Living World">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Blake">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>World of Fogideos</title>
+
+</head>
+
+<!--I chose the color scheme based on fantasy and how I had already built my world-->
+<!--Black, teal, and tan-->
+<!--Black to teal gradient background with a tan, worn scroll. All text will be black in color and placed on scroll images.-->
+
+<!--Using cursive Brush Script MT as it looks like calligraphy-->
+<!--Text size is 17px-->
+
+<style>
+
+body {
+    background-image: linear-gradient(black, teal);
+    font-family: 'Brush Script MT', cursive;
+    }
+
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+    }
+
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+
+    border: 1px;
+    text-align: center;
+    }
+    
+.height-100vh {
+  display: inline-block;
+  position: relative;
+}
+
+.text {
+  font-size: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+</style>
+<body>
+<header></header>
+
+  <div class="row"> 
+    <div class="cell">
+      <img src="images/forgideos.jpg" alt="Forgideos" width="996" height="715"/>
+    </div>
+    <div class="cell">
+       <section class="height-100vh center-aligned">
+        <img class="background-image" src="images/scrollpaper.jpg" width="400" height="715"/>
+        <div class="text">
+        The World of Forgideos:
+        <br>Biomes:
+        <br>   -Shiftlands          -Jungle
+        <br>   -Tundra              -Aberrant Forest        
+        <br>   -Ember Shard Isles   -Badlands
+        <br>   -Forest              -Safari
+        <br>   -Crystal Flats       -Desert
+        <br>   -Plains              -Helllands
+        <br>   -Islands
+        <br>Races:
+        <br>   -Humanoid            -Mythical
+        <br>   -Bestial
+        <br>Classes:
+        <br>   -Melee               -Magic
+        <br>Religion:
+        <br>   -Pantheons
+        <br>Monsters:
+        <br>   -CR 1-5              -CR 6-10
+        <br>   -CR 11-15            -CR 16-20
+        <br>   -CR 21-25            -CR 26+
+        <br>Important Places:
+        <br>   -Port Tarkuto        -Monuments 
+        <br>   -Continent Capital   -Vampire Coast
+        <br>   -Biome Capitals      -Great Prison
+        </div>
+        </section>
+    </div>
+  </div>
+
+</body>
+</html>
